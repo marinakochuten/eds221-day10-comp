@@ -32,6 +32,6 @@ library(mousecat)
 # use your theme!
 ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
   geom_point() +
-  theme_springgreens()
+  theme_purples()
 ```
 
