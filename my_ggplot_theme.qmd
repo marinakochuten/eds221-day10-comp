@@ -11,6 +11,7 @@ library(palmerpenguins)
 ```
 
 ```{r}
+# making a theme
 ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
   geom_point() +
   labs(title = "Penguins!") +
@@ -19,5 +20,18 @@ ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
         panel.background = element_rect(color = "#283618", fill = "#e9edc9"),
         axis.text = element_text(color = "#283618"),
         panel.grid.major = element_line(color = "#fefae0"))
+
+# now open up your package in another r session and make a function with the theme copied over
+```
+
+
+```{r}
+# load your package
+library(mousecat)
+
+# use your theme!
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  theme_springgreens()
 ```
 
